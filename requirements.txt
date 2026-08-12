@@ -1,0 +1,20 @@
+# Core pipeline (required)
+requests>=2.31
+numpy>=1.26
+shapely>=2.0
+trimesh>=4.0
+pyproj>=3.6
+pillow>=10.0
+
+# AI facade generation (optional — pipeline runs without these via --skip-ai,
+# just with procedural window-grid facades instead of AI-stylized ones)
+#
+# torch is deliberately NOT pinned here: install the build that matches your
+# hardware from https://pytorch.org/get-started/locally/ BEFORE installing
+# the rest of this file, e.g.:
+#   NVIDIA (CUDA):  pip install torch --index-url https://download.pytorch.org/whl/cu121
+#   AMD (ROCm):     pip install torch --index-url https://download.pytorch.org/whl/rocm6.0
+#   CPU only:       pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# Then:
+#   pip install diffusers>=0.27 transformers>=4.38 accelerate>=0.27

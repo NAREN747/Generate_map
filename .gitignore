@@ -1,0 +1,20 @@
+# Ignore generated output test folders
+test*/
+*.glb
+
+# Python byte-code / cache
+__pycache__/
+*.py[cod]
+
+# Environment variables & API keys
+.env
+
+# Virtual environments
+venv/
+env/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
